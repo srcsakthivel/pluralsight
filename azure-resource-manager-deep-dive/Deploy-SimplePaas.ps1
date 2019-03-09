@@ -1,10 +1,10 @@
 ﻿
 ### Define Deployment Variables
 
-$resourceGroupName = 'pluralsight-arm-simple-paas'
+$resourceGroupName = 'srcsakthivel-arm-simple-paas'
 $resourceProviderNamespace = 'Microsoft.Web'
 $resourceTypeName = 'sites'
-$resourceGroupLocation = 'Australia Southeast'
+$resourceGroupLocation = 'US EAST'
 
 $randomString = ([char[]]([char]'a'..[char]'z') + 0..9 | Sort-Object {Get-Random})[0..8] -join ''
 $appNamePrefix = 'pluralsight'

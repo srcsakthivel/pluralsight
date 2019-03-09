@@ -1,17 +1,17 @@
 ﻿
 ### Define Deployment Variables
 
-$resourceGroupName = 'pluralsight-arm-simple-iaas'
+$resourceGroupName = 'srcsakthivel-arm-simple-iaas'
 $resourceProviderNamespace = 'Microsoft.Network'
 $resourceTypeName = 'virtualNetworks'
-$resourceGroupLocation = 'Australia Southeast'
+$resourceGroupLocation = 'East Us'
 
-$vNetName = 'vnet-pluralsight'
-$vNetAddressPrefix = '172.16.0.0/16'
+$vNetName = 'vnet-srcsakthivel'
+$vNetAddressPrefix = '10.1.0.0/16'
 $vNetSubnet1Name = 'subnet-1'
-$vNetSubnet1Prefix = '172.16.1.0/24'
+$vNetSubnet1Prefix = '10.1.1.0/24'
 $vNetSubnet2Name = 'subnet-2'
-$vNetSubnet2Prefix = '172.16.2.0/24'
+$vNetSubnet2Prefix = '10.1.2.0/24'
 
 $randomString = ([char[]]([char]'a'..[char]'z') + 0..9 | Sort-Object {Get-Random})[0..8] -join ''
 $storageAccountNamePrefix = 'storage'
